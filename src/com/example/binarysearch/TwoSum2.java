@@ -15,33 +15,23 @@ public class TwoSum2 {
 		System.out.println(Arrays.toString(results));
 	}
 	
-	// use binary search algorithm to resolve the leetcode problem 1: twoSum
+	// use two points algorithm to resolve the leetcode problem 1: twoSum 
 	public int[] getTwoSum2(int[] nums, int target) {
 		
-		int[] results = {0,0};
-		for (int i=0; i<nums.length-1; i++) {
-			int start = i + 1;
-			int end = nums.length - 1;
-			if (nums[i] + nums[end] < target) {
-				continue;
+		int start = 0;
+		int end = nums.length - 1;
+		
+		while (start < end) {
+			int sum = nums[start] + nums[end];
+			if (sum == target) {
+				return new int[] {start, end};
+			} else if (sum < target) {
+				start++;
+			} else {
+				end--;
 			}
-			
-			while (start <= end) {
-				int m = start + (end - start) / 2;
-				
-				if (nums[i] + nums[m] == target) {
-					results[0] = i;
-					results[1] = m;
-					return results;
-				} else if (nums[i] + nums[m] < target) {
-					start = m + 1;
-				} else {
-					end = m - 1;
-				}
-			}
-			
 		}
-		return results;
+		return null;
 	}
 
 }
