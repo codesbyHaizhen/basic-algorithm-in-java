@@ -1,4 +1,4 @@
-package com.example.binarysearch;
+package com.example.algorithms;
 
 public class TwoSquareSum {
 	public static void main(String[] args) {

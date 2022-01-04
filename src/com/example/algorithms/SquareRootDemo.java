@@ -1,16 +1,14 @@
-package com.example.binarysearch;
+package com.example.algorithms;
 
-public class Demo {
+public class SquareRootDemo {
 
 	public static void main(String[] args) {
 		
 		int number = 97654000;
-		SquareRoot squareRoot = new SquareRoot();
-		
-		int result = squareRoot.getSquareRoot(number);
+
+		int result = SquareRoot.getSquareRoot(number);
 		
 		System.out.println("the square root of the number " + number + " is: " + result);
-		
 
 	}
 

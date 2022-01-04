@@ -1,9 +1,9 @@
-package com.example.binarysearch;
+package com.example.algorithms;
 
 public class SquareRoot {
 	
 	// make use of binary search algorithms to find out the squrare root of a number
-	public int getSquareRoot(int number) {
+	static int getSquareRoot(int number) {
 			
 		if (number < 0) {
 			return -1;
