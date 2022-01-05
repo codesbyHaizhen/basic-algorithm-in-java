@@ -2,20 +2,10 @@ package com.example.algorithms;
 
 import java.util.HashMap;
 
-public class LengthOfLongestSubstring {
-	
-	public static void main(String[] args) {
-		
-		String str = "abvfghiaopbg";
-		
-		LengthOfLongestSubstring lols = new LengthOfLongestSubstring();
-		int len = lols.getLengthOfLongestSubstring(str);
-		
-		System.out.println(len);
-	}
+public class LongestSubstring {
 	
 	// leetcode 3: given a String, return the length of the longest substring without repeating character
-	private int getLengthOfLongestSubstring (String str) {
+	static int getLengthOfLongestSubstring (String str) {
 		
 		HashMap<Character, Integer> map = new HashMap<>();
 		int start = 0;

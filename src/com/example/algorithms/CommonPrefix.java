@@ -1,17 +1,9 @@
 package com.example.algorithms;
 
-public class LongestCommonPrefix {
-	
-	public static void main(String... args) {
-		String[] strs = {"abcd","abcgmh", "abctee","abcgeti","abghi","age"};
-		
-		LongestCommonPrefix lcp = new LongestCommonPrefix();
-		String result = lcp.getLongestCommonPrefix(strs);
-		System.out.println(result);
-	}
+public class CommonPrefix {
 	
 	// to resolve leetcode 14: to find the longest common prefix String amongst an array of Strings
-	public String getLongestCommonPrefix(String... strs) {
+	static String getLongestCommonPrefix(String... strs) {
 		
 		if (strs == null || strs.length == 0)
 			return "";

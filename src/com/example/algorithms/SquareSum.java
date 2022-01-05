@@ -1,16 +1,10 @@
 package com.example.algorithms;
 
-public class TwoSquareSum {
-	public static void main(String[] args) {
-		
-		boolean judge = new TwoSquareSum().judgeSquareSum(65);
-		System.out.println(judge);
-
-	}
+public class SquareSum {
 	
 	// use two points algorithm to resolve the leetcode problem 633: 
 	// given a non-negative integer, decide whether there're two integers a and b such that a2 + b2 = c 
-	private boolean judgeSquareSum(int target) {
+	static boolean judgeSumSquare(int target) {
 		
 		if (target <= 0) {
 			return false;
@@ -22,7 +16,7 @@ public class TwoSquareSum {
 		while (start <= end) {
 			int sum = start * start + end * end;
 			if (sum == target) {
-				System.out.println("the two integers are: " + start + " and " + end);
+				System.out.println(target + " is sum of the square of nummer " + start + " and the square of nummer " + end);
 				return true;
 			} else if (sum < target) {
 				start ++;

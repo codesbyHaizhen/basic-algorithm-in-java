@@ -1,6 +1,6 @@
 package com.example.algorithms;
 
-public class SquareRoot {
+public class Square {
 	
 	// make use of binary search algorithms to find out the squrare root of a number
 	static int getSquareRoot(int number) {
