@@ -6,5 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/czp/Downloads/jfreechart-1.5.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/czp/Downloads/jfreechart-1.5.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/czp/Downloads/jfreechart-1.5.3-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

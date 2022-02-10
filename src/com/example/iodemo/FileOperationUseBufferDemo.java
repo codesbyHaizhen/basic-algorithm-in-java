@@ -20,9 +20,6 @@ public class FileOperationUseBufferDemo {
 		
 		FileOperationUseBuffer.readAndWriteToFile(quellFileName, targetFileName);
 		
-		lines = FileOperationUseBuffer.readFromFile(targetFileName);
-		
-		System.out.println(lines);
 		
 		
 
