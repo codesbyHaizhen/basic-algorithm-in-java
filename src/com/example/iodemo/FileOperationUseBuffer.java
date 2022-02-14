@@ -1,4 +1,4 @@
-package com.example.iodemo;
+  package com.example.iodemo;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,7 +12,7 @@ import java.util.List;
 
 public class FileOperationUseBuffer {
 	
-	static List<String> readFromFile (String quellFileName) throws IOException {
+	public static List<String> readFromFile (String quellFileName) throws IOException {
 		List<String> lines = new ArrayList<>();
 		
 		try (BufferedReader reader = Files.newBufferedReader(Paths.get(quellFileName))) {
@@ -26,9 +26,9 @@ public class FileOperationUseBuffer {
 		return lines;
 	}
 	
-	static void writeToFile (List<String> lines, String targetFileName) throws IOException {
+	public static void writeToFile (List<String> lines, String targetFileName) throws IOException {
 		
-		try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(targetFileName), StandardOpenOption.APPEND)) {
+		try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(targetFileName))) {
 			for (String line : lines) {
 				writer.write(line + "\n");
 			}
@@ -37,7 +37,7 @@ public class FileOperationUseBuffer {
 		}
 	}
  
-	static void readAndWriteToFile(String quellFileName, String targetFileName) throws IOException {
+	public static void readAndWriteToFile(String quellFileName, String targetFileName) throws IOException {
 		try (BufferedReader reader = Files.newBufferedReader(Paths.get(quellFileName));BufferedWriter writer = Files.newBufferedWriter(Paths.get(targetFileName), StandardOpenOption.APPEND)) {
 			
 			String line = null;
